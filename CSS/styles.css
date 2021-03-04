@@ -1,0 +1,231 @@
+:root {
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --accent-color: #2196f3;
+  --font-color: #212121;
+}
+
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+/* Исправить боди текст декор через классы */
+body {
+  font-family: var(--main-font);
+  color: var(--font-color);
+}
+/*=======Header==========*/
+.header {
+  display: flex;
+  width: 1600px;
+  height: 80px;
+}
+.header-nav {
+  display: flex;
+}
+.nav-list {
+  display: flex;
+}
+.logo-header,
+.logo-footer {
+  width: 145px;
+  height: 31px;
+  margin-left: 215px;
+  font-family: var(--secondary-font);
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+.header-logo-color {
+  color: #000000;
+}
+
+.nav-list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.nav-link {
+  color: var(--font-color);
+}
+.current {
+  color: var(--accent-color);
+}
+.nav-link:hover,
+.nav-link:focus,
+.cont-link:hover,
+.cont-link:focus,
+.footer-cont-link:hover,
+.footer-cont-link:focus {
+  color: var(--accent-color);
+}
+.cont-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
+  /*========Header End=========*/
+}
+.hero {
+  box-sizing: border-box;
+  width: 1600px;
+  height: 600px;
+
+  background: #2f303a;
+  /*padding-top: 200px;*/
+}
+.hero-slogan-box {
+  /*margin-top: 200px;*/
+}
+
+.hero-slogan {
+  box-sizing: border-box;
+  width: 696px;
+  height: 120px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-left: 452px;
+  color: #ffffff;
+}
+.hero-button {
+  width: 200px;
+  height: 50px;
+  margin-left: 700px;
+  margin-top: 30px;
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  cursor: pointer;
+}
+.advantages {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.text {
+  width: 270px;
+  height: 75px;
+  left: 215px;
+  top: 800px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+.section-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.pict-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.sec-photo {
+  display: flex;
+}
+.prof-text {
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+/*======= Footer ===========*/
+.footer {
+  width: 1600px;
+  height: 252px;
+  background: #2f303a;
+}
+.footer-logo-color {
+  color: #ffffff;
+}
+.addres {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.footer-cont-link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+/*======= Footer END ==========*/
+
+/*============Portfolio main sec================*/
+.main-buttons {
+  display: flex;
+}
+.main-buttoms-list {
+  height: 38px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  border-style: hidden;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+.main-buttoms-list:hover {
+  color: #ffffff;
+  background: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.main-sec {
+  width: 1170px;
+  height: 1360px;
+}
+.projects {
+  display: flex;
+}
+.project-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.project-text {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+/*.hidden-tittle {
+  width: 0px;
+  height: 0px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;*/
+}
+
+/*============Portfolio main sec End==============*/
