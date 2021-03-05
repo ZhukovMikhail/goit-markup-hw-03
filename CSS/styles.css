@@ -34,20 +34,27 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-/*=======Header==========*/
-.header {
-  display: flex;
-  height: 80px;
-}
-.header .container {
-  display: flex;
-  align-items: center;
-}
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+/*=======Header==========*/
+.header {
+  display: flex;
+  height: 80px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ececec;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+}
+.header.section {
+  padding-bottom: 0px;
+  padding-top: 0px;
 }
 .header-nav {
   align-items: center;
@@ -146,9 +153,8 @@ body {
 /*===========Section Hero END==========*/
 
 /*============== Advanteges =============*/
-.advanteges {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.advanteges.section {
+  padding-bottom: 0px;
 }
 .advanteges-item {
   padding-top: 1px;
@@ -216,10 +222,6 @@ body {
 .our-team .list {
   display: flex;
 }
-.our-team .container {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .our-team .section-title {
   margin-bottom: 50px;
 }
@@ -274,13 +276,16 @@ body {
 /*======= Footer END ==========*/
 
 /*============Portfolio main sec================*/
-.main-pfolio .section {
+.main-pholio .section {
   padding-top: 127px;
+  padding-bottom: 61px;
+}
+.container .main-pholio {
 }
 .main-buttons {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 .main-buttons-links {
   height: 38px;
@@ -293,6 +298,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
+  padding: 6px 22px;
 }
 .main-buttons-list:not(:last-child) {
   margin-right: 8px;
@@ -312,7 +318,6 @@ body {
   /*margin-top: 34px;*/
   margin-left: -30px;
   margin-top: -30px;
-  margin-bottom: 61px;
 }
 .project-title {
   font-weight: bold;
@@ -325,11 +330,21 @@ body {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: #757575;
+  margin-top: 4px;
 }
 .project-item {
   margin-left: 30px;
   margin-top: 30px;
+  border-bottom-style: solid;
+  border-bottom-color: #eeeeee;
+  border-bottom-width: 1px;
   flex-basis: calc((100% - 90px) / 3);
+}
+.project-card {
+  display: block;
+}
+.project-card-name {
+  padding: 20px 24px;
 }
 /*.hidden-tittle {
   width: 0px;
