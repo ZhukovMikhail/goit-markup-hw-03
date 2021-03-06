@@ -3,6 +3,8 @@
   --secondary-font: "Raleway", sans-serif;
   --accent-color: #2196f3;
   --font-color: #212121;
+  --project-card-gap: 30px;
+  --sector-width: 1600px;
 }
 h1,
 h2,
@@ -10,7 +12,7 @@ h3,
 h4,
 h5,
 h6,
-p {
+s p {
   margin: 0px;
 }
 ul,
@@ -30,7 +32,7 @@ body {
   color: var(--font-color);
 }
 .section {
-  width: 1600px;
+  width: var(--sector-width);
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -149,6 +151,7 @@ body {
   letter-spacing: 0.06em;
   color: #ffffff;
   cursor: pointer;
+  border-style: hidden;
 }
 /*===========Section Hero END==========*/
 
@@ -229,10 +232,10 @@ body {
   margin-right: 30px;
 }
 .team-list {
-  width: 270px;
-  height: 368px;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-photo {
   display: block;
@@ -246,7 +249,7 @@ body {
 /*=============== OUR Team END ==================/*
 /*======= Footer ===========*/
 .footer {
-  width: 1600px;
+  width: var(--sector-width);
   height: 252px;
   background: #2f303a;
   padding-top: 60px;
@@ -280,8 +283,8 @@ body {
   padding-top: 127px;
   padding-bottom: 61px;
 }
-.container .main-pholio {
-}
+/*.container .main-pholio {
+}*/
 .main-buttons {
   display: flex;
   justify-content: center;
@@ -316,8 +319,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   /*margin-top: 34px;*/
-  margin-left: -30px;
-  margin-top: -30px;
+  margin-left: calc(-1 * var(--project-card-gap));
+  margin-top: calc(-1 * var(--project-card-gap));
 }
 .project-title {
   font-weight: bold;
@@ -333,12 +336,12 @@ body {
   margin-top: 4px;
 }
 .project-item {
-  margin-left: 30px;
-  margin-top: 30px;
+  flex-basis: calc(100% / 3 - var(--project-card-gap));
+  margin-left: var(--project-card-gap);
+  margin-top: var(--project-card-gap);
   border-bottom-style: solid;
   border-bottom-color: #eeeeee;
   border-bottom-width: 1px;
-  flex-basis: calc((100% - 90px) / 3);
 }
 .project-card {
   display: block;
