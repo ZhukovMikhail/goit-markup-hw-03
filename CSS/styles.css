@@ -52,25 +52,30 @@ body {
 }
 .header .container {
   display: flex;
-  align-items: center;
+  /*align-items: center*/
 }
 .header.section {
   padding-bottom: 0px;
   padding-top: 0px;
 }
 .header-nav {
-  align-items: center;
+  /*align-items: center;*/
   display: flex;
   margin-right: auto;
 }
 .nav-list {
   display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
-
+.logo-header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
 .logo-header,
 .logo-footer {
   width: 145px;
-  height: 31px;
+  /*height: 31px;*/
   font-family: var(--secondary-font);
   font-weight: bold;
   font-size: 26px;
@@ -87,8 +92,9 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  margin-left: 93px;
 }
-.nav-list-item {
+.nav-list-item:not(:first-child) {
   margin-left: 50px;
 }
 
@@ -113,6 +119,8 @@ body {
   letter-spacing: 0.02em;
   color: #757575;
   margin-left: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   /*========Header End=========*/
 }
 /*===========Section Hero==========*/
@@ -280,8 +288,8 @@ body {
 
 /*============Portfolio main sec================*/
 .main-pholio .section {
-  padding-top: 127px;
-  padding-bottom: 61px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 /*.container .main-pholio {
 }*/
