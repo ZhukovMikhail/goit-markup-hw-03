@@ -4,7 +4,6 @@
   --accent-color: #2196f3;
   --font-color: #212121;
   --project-card-gap: 30px;
-  --sector-width: 1600px;
 }
 h1,
 h2,
@@ -23,6 +22,7 @@ li {
 
 .link {
   text-decoration: none;
+  display: block;
 }
 .list {
   list-style: none;
@@ -32,7 +32,6 @@ body {
   color: var(--font-color);
 }
 .section {
-  width: var(--sector-width);
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -45,28 +44,24 @@ body {
 /*=======Header==========*/
 .header {
   display: flex;
-  height: 80px;
+  /*height: 80px;*/
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #ececec;
 }
 .header .container {
   display: flex;
-  /*align-items: center*/
 }
 .header.section {
   padding-bottom: 0px;
   padding-top: 0px;
 }
 .header-nav {
-  /*align-items: center;*/
   display: flex;
   margin-right: auto;
 }
 .nav-list {
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 .logo-header {
   padding-top: 24px;
@@ -79,7 +74,7 @@ body {
   font-family: var(--secondary-font);
   font-weight: bold;
   font-size: 26px;
-  line-height: 1.19;
+  line-height: 1.192;
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
@@ -100,6 +95,8 @@ body {
 
 .nav-link {
   color: var(--font-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .current {
   color: var(--accent-color);
@@ -164,8 +161,8 @@ body {
 /*===========Section Hero END==========*/
 
 /*============== Advanteges =============*/
-.advanteges.section {
-  padding-bottom: 0px;
+/*.advanteges.section {
+  padding-bottom: 0px;*/
 }
 .advanteges-item {
   padding-top: 1px;
@@ -197,6 +194,10 @@ body {
 /*============== Advanteges END=============*/
 
 /*=============== What do we do===============*/
+
+.what-we-do.section {
+  padding-top: 0px;
+}
 .section-title {
   font-weight: bold;
   font-size: 36px;
@@ -257,33 +258,38 @@ body {
 /*=============== OUR Team END ==================/*
 /*======= Footer ===========*/
 .footer {
-  width: var(--sector-width);
-  height: 252px;
   background: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.logo-footer {
+  margin-bottom: 20px;
 }
 .footer-logo-color {
   color: #ffffff;
 }
 .addres {
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.714;
   letter-spacing: 0.03em;
   color: #ffffff;
 }
 .footer-cont-link {
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.714;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.footer .list {
+.footer-adress {
   margin-top: 20px;
 }
 .footer-cont-link {
   margin-top: 9px;
 }
+.footer-adress {
+  font-style: normal;
+}
+
 /*======= Footer END ==========*/
 
 /*============Portfolio main sec================*/
