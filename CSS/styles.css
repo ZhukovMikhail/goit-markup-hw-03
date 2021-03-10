@@ -1,6 +1,6 @@
 :root {
-  --main-font: "Roboto", sans-serif;
-  --secondary-font: "Raleway", sans-serif;
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
   --accent-color: #2196f3;
   --font-color: #212121;
   --project-card-gap: 30px;
@@ -11,7 +11,7 @@ h3,
 h4,
 h5,
 h6,
-s p {
+p {
   margin: 0px;
 }
 ul,
@@ -163,7 +163,6 @@ body {
 /*============== Advanteges =============*/
 /*.advanteges.section {
   padding-bottom: 0px;*/
-}
 .advanteges-item {
   padding-top: 1px;
 }
@@ -183,9 +182,6 @@ body {
 }
 .text {
   width: 270px;
-  height: 75px;
-  left: 215px;
-  top: 800px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -249,8 +245,9 @@ body {
 .team-photo {
   display: block;
 }
-.team-list .pict-title {
-  margin-top: 30px;
+.team-name {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .prof-text {
   margin-top: 10px;
@@ -353,17 +350,18 @@ body {
   flex-basis: calc(100% / 3 - var(--project-card-gap));
   margin-left: var(--project-card-gap);
   margin-top: var(--project-card-gap);
-  border-bottom-style: solid;
-  border-bottom-color: #eeeeee;
-  border-bottom-width: 1px;
 }
 .project-card {
   display: block;
 }
 .project-card-name {
   padding: 20px 24px;
+  border-style: solid;
+  border-color: #eeeeee;
+  border-width: 1px;
+  border-top: none;
 }
-/*.hidden-tittle {
+.hidden-tittle {
   width: 0px;
   height: 0px;
   margin: -1px;
@@ -372,5 +370,6 @@ body {
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
-  overflow: hidden;}*/
+  overflow: hidden;
+}
 /*============Portfolio main sec End==============*/
